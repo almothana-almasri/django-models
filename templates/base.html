@@ -1,22 +1,15 @@
-{% load static %}
-
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'snacks/css/styles.css' %}">
-    <title>Document</title>
+    <title>Snack Tracker</title>
+    <link rel="stylesheet" href="{%  static 'css/style.css'%}">
+
 </head>
-<body class="dark">
-    <header>
-        <nav>
-            <a href="{% url 'home' %}">HOME</a>
-            <a href="{% url 'about'%}">ABOUT</a>
-        </nav>
-     </header>  
+<body>
     {% block content%}
-    {% endblock%}
-    
+    {% endblock %}
 </body>
 </html>
